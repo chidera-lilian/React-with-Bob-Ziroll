@@ -12,7 +12,8 @@ export default function Home () {
             <section className='home'>
                 <div className="home-content-container">
                     <h1>
-                        You got the travel plans, we got the travel vans
+                        You got the travel plans, we got the travel vans.
+                        This is a test for continuous deployment. Fingers crossed!!
                     </h1>
 
                     <p>
