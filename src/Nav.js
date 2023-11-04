@@ -18,7 +18,7 @@ export default function Nav() {
                             <Link to="/about">About</Link>
                         </li>
                         <li>
-                        <Link to="/">Home</Link></li>
+                        <Link to="/vans">Vans</Link></li>
                     </ul>
                 </nav>
             </header>

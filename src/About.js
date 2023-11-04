@@ -9,14 +9,12 @@ export default function About() {
         <>
             <section className="about-section">
                 <div className="about-section-container">
-                    <figure>
-                        <img src="/img/blue-pretty-color.jpg" alt="Ought to be a van picture"/>
-                    </figure>
-
+                    <div className='banner'>
                     <h1>
                         Don't squeeze into a sedan when you can relax in a van
                     </h1>
 
+                    <div className="ps">
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nemo placeat quasi voluptatem fuga vitae itaque maxime cum fugiat, repellendus tempore adipisci quisquam aliquam quis ducimus dicta facilis ratione perferendis.
                     </p>
@@ -24,6 +22,8 @@ export default function About() {
                     <p className='p2'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo libero explicabo repellat nam impedit nisi, eum ipsam enim corporis!
                     </p>
+                    </div>
+                    </div>
 
                     <div className="text-container">
                         <h1>
@@ -37,7 +37,6 @@ export default function About() {
                         </button>
                     </div>
                 </div>
-                <Footer></Footer>
             </section>
         </>
     )

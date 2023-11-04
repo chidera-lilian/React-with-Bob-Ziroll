@@ -13,11 +13,10 @@ export default function Home () {
                 <div className="home-content-container">
                     <h1>
                         You got the travel plans, we got the travel vans.
-                        This is a test for continuous deployment. Fingers crossed!!
                     </h1>
 
                     <p>
-                        Add adventure to your life by joining the #vanlife movement.
+                        Add adventure to your life by joining the <span>#vanlife</span> movement.
                         <br />
                         Rent the perfect van to make your perfect road trip.
                     </p>
@@ -26,7 +25,6 @@ export default function Home () {
                         <a href="#">Find your van</a>
                     </button>
                 </div>
-                <Footer/>
             </section>        
         </>
     )

@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './index.css';
 import Home from './Home.js';
 import Nav from './Nav';
-import Footer from './Footer';
+import Footer from './Footer.js';
 import About from './About.js';
+import Vans from './Vans.js';
 import reportWebVitals from './reportWebVitals';
 
 //I should have added the nav bar here, like i wanted to in the beginning. Curses.
@@ -20,7 +21,9 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/vans' element={<Vans />}/>
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   
 );
