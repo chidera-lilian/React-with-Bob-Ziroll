@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import './server';
-import Footer from './Footer';
+import VanDetails from './VanDetails';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 export default function Vans() {
     const [vans, setVans] = React.useState([]);
@@ -16,6 +17,7 @@ export default function Vans() {
     const allVans = vans.map(function(van) {
         return (
             <>
+            <Link to={`/vans/${van.id}`} className='van-links'>
                 <figure key={van.id}>
                     <img src={van.imageUrl} alt="" />
                     <figcaption>
@@ -28,6 +30,7 @@ export default function Vans() {
                         </button>
                     </figcaption>
                 </figure>
+            </Link>
             </>
         )
     })

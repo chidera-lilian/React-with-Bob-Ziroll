@@ -22,7 +22,7 @@ export default function Home () {
                     </p>
 
                     <button>
-                        <a href="#">Find your van</a>
+                        <Link to='/vans'>Find your van</Link>
                     </button>
                 </div>
             </section>        

@@ -10,14 +10,14 @@ export default function Nav() {
         <>
             <header>
                 <nav>
-                    <h1>
+                    <h1 className='hover'>
                         <Link to="/">#VanLife</Link>
                     </h1>
                     <ul>
-                        <li>
+                        <li className='hover'>
                             <Link to="/about">About</Link>
                         </li>
-                        <li>
+                        <li className='hover'>
                         <Link to="/vans">Vans</Link></li>
                     </ul>
                 </nav>
