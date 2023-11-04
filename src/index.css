@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(179, 171, 108);
+}
+
+main {
+  background-color: rgb(179, 171, 108);
+  width: 100vw;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3%;
+}
+
+header {
+  background-color: rgb(179, 171, 108);
+  width: 100%;
+  height: 15%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav h1 {
+  margin: 0 0 0 2%;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+header nav ul {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin: 0 2% 0 0;
+  justify-content: space-between;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  margin: 3% 0;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.home .home-content-container {
+  width: 100%;
+  height: 75%;
+  background-image: url(/public/img/roses.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2% 0 2%;
+}
+.home .home-content-container h1 {
+  margin: 10% 0 0 0;
+  font-size: 180%;
+  width: 100%;
+  letter-spacing: 0.05rem;
+  color: whitesmoke;
+}
+.home .home-content-container p {
+  color: whitesmoke;
+  margin: 8% 0 0 0;
+  font-size: 1rem;
+  width: 100%;
+}
+.home .home-content-container button {
+  background-color: rgb(156, 61, 9);
+  width: 100%;
+  height: 10%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 10% 0 0 0;
+}
+
+.about-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: whitesmoke;
+}
+.about-section header {
+  height: 8%;
+}
+.about-section .about-section-container {
+  height: 80%;
+}
+.about-section .about-section-container figure {
+  height: 30%;
+  width: 100%;
+  background-color: chartreuse;
+}
+.about-section .about-section-container figure img {
+  width: 100%;
+  max-height: 100%;
+}
+.about-section .about-section-container h1 {
+  margin: 3% 0 3% 0;
+  color: black;
+  letter-spacing: 0px;
+}
+.about-section .about-section-container p {
+  margin: 0 0 3% 0;
+  font-size: 0.8rem;
+}
+.about-section .about-section-container .text-container {
+  width: 100%;
+  height: 30%;
+  background-color: olive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 0 0 5%;
+}
+.about-section .about-section-container .text-container h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.about-section .about-section-container .text-container button {
+  background-color: black;
+  color: whitesmoke;
+  height: 30%;
+  width: 30%;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+.about-section .about-section-container .text-container button a {
+  font-size: 0.8rem;
+}
+.about-section footer {
+  height: 7%;
+}
+
+footer {
+  background-color: rgb(32, 30, 30);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}/*# sourceMappingURL=index.css.map */
