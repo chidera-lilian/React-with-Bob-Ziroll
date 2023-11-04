@@ -12,7 +12,7 @@ export default function Home () {
             <section className='home'>
                 <div className="home-content-container">
                     <h1>
-                        You got the travel plans, we got the travel vans
+                        You got the travel plans, we got the travel vansssssss
                     </h1>
 
                     <p>
