@@ -5,12 +5,8 @@ export default function VanPhoto () {
     const { EachVan } = useOutletContext()
 
     return (
-        <>
-        <img 
-        className='img '
-        style={{height: '30%', maxWidth: '40%', alignSelf: 'center'}}
-        src={EachVan.imageUrl} 
-        alt="where?" />
-        </>
+        <figure>
+        <img src={EachVan.imageUrl} alt="where?" />
+        </figure>
     )
 }

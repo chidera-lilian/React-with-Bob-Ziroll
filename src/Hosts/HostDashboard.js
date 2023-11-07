@@ -5,7 +5,7 @@ export default function HostDashBoard() {
     return (
         <>
             
-            <h2>dash</h2>
+            <h4>Main host page goes here</h4>
         </>
     )
 }
