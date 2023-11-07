@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
-import './server';
-import VanDetails from './VanDetails';
+import '../server';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 export default function Vans() {

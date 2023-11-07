@@ -1,9 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
-import Nav from './Nav';
-import Footer from './Footer';
 
 
 export default function Home () {
@@ -14,7 +10,7 @@ export default function Home () {
                     <h1>
                         You got the travel plans, we got the travel vans.
                     </h1>
-
+                    
                     <p>
                         Add adventure to your life by joining the <span>#vanlife</span> movement.
                         <br />

@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './server';
+import '../server'; //the mirage server where we 'fetched our api'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+
+/* 
+ I dont know why the element below is wrapped in a conditional, 
+ but i do no that without that conditional statement, the page will not render and give some sort of error.
+*/
 
 export default function VanDetails() {
     const params = useParams()
     console.log(params.id)
 
-    const [vansDetail, setVansDetail] = React.useState(null);
+    const [vansDetail, setVansDetail] = React.useState();
     React.useEffect(function(){
         fetch(`/api/vans/${params.id}`)
             .then(res => res.json())
