@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createRoot} from 'react-dom/client';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import './index.css';
 import Home from './Home.js';
 import Footer from './Navigations/Footer.js';
@@ -42,6 +42,17 @@ import VanPrice from './Hosts/VanPrice.js';
  Since the HostDashboard board is the 'homepage', the index is used to specify that.
  */
 
+function NotFound() {
+  return (
+    <>
+      <h4>
+        404 <br />
+        Page Not Found
+      </h4>
+      <NavLink to='/'>Return to Home</NavLink>
+    </>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -51,6 +62,7 @@ root.render(
       <Routes>
         {/* 1st nav bar */}
         <Route element={<Layout/>}>
+          <Route path='*' element={<NotFound/>}/>
           <Route path='/' element={<Home />}/>
           <Route path='about' element={<About />}/>
           <Route path='vans' element={<Vans />}/>

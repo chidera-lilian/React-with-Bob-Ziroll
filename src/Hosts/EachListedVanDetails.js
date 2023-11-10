@@ -30,7 +30,7 @@ const params = useParams()
     return (
        <>
             <section className="eachlvd">
-                <NavLink to='/hosts/ListedVans' className='navlink'>Back to all vans</NavLink>
+                <NavLink to='/hosts/ListedVans' className='navlink'>&larr; Back to all vans</NavLink>
 
                 { EachVan ? <div className="eachlvd-container">
                     <div className="container">

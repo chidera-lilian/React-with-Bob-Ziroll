@@ -20,6 +20,12 @@ h4 {
     
 }
 
+.van-link {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--orange);
+}
+
 .third-link {
     color: white;
     text-decoration: underline;
@@ -70,7 +76,6 @@ header {
             font-weight: bolder;
             font-size: 1rem;
             color: var(--off-white);
-            text-decoration: underline;
         }
 
         ul {
@@ -81,7 +86,7 @@ header {
             justify-content: space-between;
         }
 
-        .hover:hover {
+        a:hover {
             color: var(--orange);
         }
     }
@@ -306,6 +311,8 @@ header {
                     color: var(--white);
                     font-size: .7rem;
                 }
+
+                
             }
         }
 

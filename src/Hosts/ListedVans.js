@@ -15,7 +15,7 @@ export default function ListedVans() {
     
     const eachVan = vansDetail.map(function(van){
         return (
-            <NavLink to={`/hosts/listedvans/${van.id}`}>
+            <NavLink to={`${van.id}`}>
                 <div key={van.id} className="each-van">
                 <figure>
                     <img src={van.imageUrl}alt="" />

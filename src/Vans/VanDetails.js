@@ -1,6 +1,6 @@
 import React from 'react';
 import '../server'; //the mirage server where we 'fetched our api'
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 /* 
@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 export default function VanDetails() {
     const params = useParams()
     console.log(params.id)
+    const location = useLocation()
 
     const [vansDetail, setVansDetail] = React.useState();
     React.useEffect(function(){
@@ -19,10 +20,18 @@ export default function VanDetails() {
             .then(data => setVansDetail(data.vans))
     }, [params.id]) //The dependency runs the effect whenever the param.id changes
     console.log(vansDetail)
+
+    const search = location.state && location.state.search || null
+    // basically, when a user filters the products, and then click on one of the filtered vans, and then wants to go back to the filtered listed vans, we do all this. Import useloacation, 'state = {{search: `?${searchparams.toString()}`}}' in the mapped navlink on vans page. 'search' can be anything you want, but state is constant as it is from react. 
+    //explaining the code above is basically get the state location in vans.js, the get the state's obj search property and if they don't exists go back to all vans page
+
+    const type = location.state && location.state.type || "all"
+    //here, we want the back to vans text in vandetails to say back to the previously applied filtered vans. So in vans.js, we added a type property to our state object and rendered the type variable above in our back to text
     return (
         <>
             <section className="van-detail">
-                <Link to='/vans' className='back'> #Back to vans
+                <Link to={`/vans${search}`} 
+                className='back'>  &larr; Back to all {type} vans
                 </Link>
                 {vansDetail ? <div className="van-details-container">
                     <figure>

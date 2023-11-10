@@ -17,6 +17,12 @@ h4 {
   padding: 10% 0 0 0;
 }
 
+.van-link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--orange);
+}
+
 .third-link {
   color: white;
   text-decoration: underline;
@@ -66,7 +72,6 @@ header nav h1 {
   font-weight: bolder;
   font-size: 1rem;
   color: var(--off-white);
-  text-decoration: underline;
 }
 header nav ul {
   width: 50%;
@@ -75,7 +80,7 @@ header nav ul {
   margin: 0 2% 0 0;
   justify-content: space-between;
 }
-header nav .hover:hover {
+header nav a:hover {
   color: var(--orange);
 }
 
